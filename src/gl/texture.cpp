@@ -7,7 +7,7 @@
 namespace ada {
 
 // TEXTURE
-Texture::Texture():m_path(""), m_width(0), m_height(0), m_id(0), m_vFlip(false) {
+Texture::Texture():m_path(""), m_width(0), m_height(0), m_format(0), m_id(0), m_vFlip(false) {
 }
 
 Texture::~Texture() {

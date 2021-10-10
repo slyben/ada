@@ -42,6 +42,7 @@ Light::Light(glm::vec3 _pos, glm::vec3 _dir, float _falloff): m_mvp_biased(1.0),
     direction = _dir;
     setPosition(_pos);
     falloff = _falloff;
+    std::fill(m_viewport, m_viewport + 4, 0);
 }
 
 Light::~Light() {

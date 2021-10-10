@@ -12,6 +12,7 @@
 namespace ada {
 
 Shader::Shader():
+    textureIndex(0),
     m_fragmentSource(""),
     m_vertexSource(""),
     m_program(0), m_fragmentShader(0), m_vertexShader(0) {

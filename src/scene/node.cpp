@@ -185,7 +185,7 @@ void Node::lookAt(const glm::vec3& _lookAtPosition, glm::vec3 _upVector ) {
 void Node::orbit(float _lat, float _lon, float _radius, const glm::vec3& _centerPoint) {
     glm::vec3 p = glm::vec3(0.0, 0.0, _radius);
 
-    _lon = ada::clamp(_lon,-89.9,89.9);
+    _lon = ada::clamp(_lon,-89.9f,89.9f);
 
 
     glm::quat lat = glm::angleAxis(glm::radians(_lon), glm::vec3(1.0, 0.0, 0.0));
